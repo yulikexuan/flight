@@ -24,8 +24,10 @@ public class FlightDepartureSpecification {
         LocalDate today = LocalDate.now();
 
         LocalDateTime departureDateTime = LocalDateTime.of(today, departure);
-        LocalDateTime timeWinStart = departureDateTime.minusHours(TIME_WIN_DISTANCE_HOURS);
-        LocalDateTime timeWinEnd = departureDateTime.plusHours(TIME_WIN_DISTANCE_HOURS);
+        LocalDateTime timeWinStart = departureDateTime.minusHours(
+                TIME_WIN_DISTANCE_HOURS);
+        LocalDateTime timeWinEnd = departureDateTime.plusHours(
+                TIME_WIN_DISTANCE_HOURS);
 
         LocalTime flightDeparture = flight.getDeparture();
 

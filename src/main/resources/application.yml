@@ -1,8 +1,6 @@
-# logging.level.guru.springframework=debug
 logging:
   level:
-    guru.springframework: debug
-    # org.springframework: debug
+    com.expedia.flight: debug
 spring:
   # Pretty-print JSON responses
   jackson:

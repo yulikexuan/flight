@@ -140,4 +140,14 @@ public class FlightDepartureSpecificationTest {
         assertThat(altSatisfied, is(false));
     }
 
+    @Test
+    public void not_Satisfied_By_Null_Flight_Or_Departure_Time() throws Exception {
+
+        // When & Then
+        assertThat(FlightDepartureSpecification.isSatisfied(
+                new Flight(), null), is(false));
+        assertThat(FlightDepartureSpecification.isSatisfied(
+                null, LocalTime.now()), is(false));
+    }
+
 }///:~
