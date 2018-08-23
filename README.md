@@ -1,8 +1,15 @@
-### Assumptions
-
-1. URL: 
+### How to run
+1. This is a spring-boot project and it's original-folder name is "flight"
+2. Use "mvn clean install" to rebuild this project
+3. Use "mvn spring-boot:run" to run it 
+4. Use "mvn verify" to run intergration test
+5. URI: 
      - http://127.0.0.1:8080/api/v1/flights/2:31am
      - http://127.0.0.1:8080/api/v1/flights/6am
+
+### Assumptions
+
+1. There is no Time Zone being used
 
 2. Each day has the same flights:
        - { "flight": "Air Canada 8099", "departure": "7:30AM" }, 
